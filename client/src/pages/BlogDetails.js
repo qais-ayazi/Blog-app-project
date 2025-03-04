@@ -56,7 +56,7 @@ const BlogDetails = () => {
   };
   console.log(blog);
   return (
-    <v>
+    <div>
       <form onSubmit={handleSubmit}>
         <Box
           width={"50%"}
@@ -116,13 +116,14 @@ const BlogDetails = () => {
             margin="normal"
             variant="outlined"
             required
+            className="blog-image"
           />
           <Button type="submit" color="warning" variant="contained">
             UPDATE
           </Button>
         </Box>
       </form>
-    </v>
+    </div>
   );
 };
 
